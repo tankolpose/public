@@ -1,4 +1,4 @@
-name: 'run BiliExp-199'
+name: 'run BiliExp'
 
 on:
   schedule:
