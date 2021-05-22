@@ -1,8 +1,8 @@
-name: 'run BiliExp'
+name: 'run BiliExp-199'
 
 on:
   schedule:
-    - cron: '0 4 * * *' #中午12:00执行，修改时注意时区
+    - cron: '0 10 * * *' #中午12:00执行，修改时注意时区
   watch:
     types: started
   workflow_dispatch:
@@ -28,6 +28,6 @@ jobs:
       run: bash ./run_in_Actions/run_BiliExp.sh
       env:
           ADVCONFIG: ${{ secrets.ADVCONFIG }}
-          BILICONFIG: ${{ secrets.BILICONFIG }}
+          BILICONFIG: ${{ secrets.BILICONFIG199 }}
           PUSH_MESSAGE: ${{ secrets.PUSH_MESSAGE }}
           DELAY: ${{ secrets.DELAY }}
